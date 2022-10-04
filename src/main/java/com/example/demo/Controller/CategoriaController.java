@@ -33,7 +33,7 @@ public class CategoriaController {
 @Autowired
     CategoriaService categoriaService;
 
-    @ApiOperation(value = "Lista de actividades")
+    @ApiOperation(value = "Lista de categorias")
     @GetMapping("/all")
     public List<Categoria> findAll() {
         return categoriaService.findAll();

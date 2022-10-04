@@ -53,7 +53,7 @@ public class ProductoController {
         productoService.deleteById(id);
     }
 
-    @ApiOperation(value = "Crea una categoria")
+    @ApiOperation(value = "Crea un producto")
     @PostMapping("/save")
     public Producto save(@RequestBody Producto producto) {
         return productoService.save(producto);
